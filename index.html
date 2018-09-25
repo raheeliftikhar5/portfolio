@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- <link rel="stylesheet" href="./styles/responsive.css"> -->
   </head>
   <body>
     <div class="progress-bar"></div>
@@ -33,51 +33,73 @@
           </div>
         </div>
         <div class="social text-center">
-          <a href="#"><i class="fas fa-envelope"></i></a>
-          <a href="#"><i class="fas fa-phone"></i></a>
-          <a href="#"><i class="fab fa-skype"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-github-alt"></i></a>
+          <a href="#">
+            <!-- <i class="fas fa-envelope"></i> -->
+            EMAIL
+          </a>
+          <a href="#">
+            <!-- <i class="fas fa-phone"></i> -->
+            PHONE
+          </a>
+          <a href="#">
+            <!-- <i class="fab fa-skype"></i> -->
+            SKYPE
+          </a>
+          <a href="#">
+            <!-- <i class="fab fa-linkedin-in"></i> -->
+            LINKEDIN
+          </a>
+          <a href="#">
+            <!-- <i class="fab fa-github-alt"></i> -->
+            GITHUB
+          </a>
         </div>
       </div>
     </main>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
-        <h1>ABOUT ME</h1>
+        <h1 class="section-head">ABOUT ME</h1>
         <div class="d-flex align-items-center justify-content-center inner-content">
-          <div class="row">  
-            <div class="col-md-5 image text-center">
-              <img src="./images/image.jpg">
-            </div>
-            <div class="col-md-5 introduction text-left">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-          </div>
-          <!-- <div class="row d-flex justify-content-center">
-            <div class="col-md-8">
-              <div class="row d-flex justify-content-between">
-                <div class="col-md-4">
-                <h3>Career Objective</h3>
-                </div>
-                <div class="col-md-6">
+          <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+              <div class="card">
+                <h4>Career Objective</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
+              </div>
+
+              <div class="card academics">
+                <h4>Academics</h4>
+                <ul>
+                  <li>
+                    <h5>Bachelors of Science in Computer Science - BS(CS)</h5>
+                    <p>National University of Computer & Emerging Sciences, Islamabad  (2011 - 2015)</p>
+                  </li>
+                  <li>
+                    <h5>Higher Secondary School Certificate - HSSC</h5>
+                    <p>F.G. Liaqat Ali Degree College, Rawalpindi  (2009 - 2011)</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <h4>Career Objective</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="work bg-primary">
+    <section class="work bg-primary" id="work">
       <div class="container">
-        <h1>WORK EXPERIENCE</h1>
+        <h1 class="section-head">WORK EXPERIENCE</h1>
         <div class="d-flex flex-column justify-content-center inner-content">
           <div class="row">
             <div class="col-md-6 text-right milestone left">
               <div>
-                <h2>Pearl Soft</h2>
+                <h3 class="font-weight-bold">Pearl Soft</h3>
                 <h3>UI/UX Developer</h3>
                 <p>(Aug 2015 - Oct 2015)</p>
               </div>
@@ -89,7 +111,7 @@
             <div class="col-md-6"></div>
             <div class="col-md-6 text-left milestone right">
               <div>
-                <h2>Upwork</h2>
+                <h3 class="font-weight-bold">Upwork</h3>
                 <h3>Freelance Web Developer</h3>
                 <p>(Nov 2015 - Jan 2016)</p>
               </div>
@@ -99,7 +121,29 @@
           <div class="row">
             <div class="col-md-6 text-right milestone left">
               <div>
-                <h2>HireNinja Inc.</h2>
+                <h3 class="font-weight-bold">HireNinja Inc.</h3>
+                <h3>Frontend Developer</h3>
+                <p>(Feb 2016 - Current)</p>
+              </div>
+              <div class="marker"></div>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 text-left milestone right">
+              <div>
+                <h3 class="font-weight-bold">Upwork</h3>
+                <h3>Freelance Web Developer</h3>
+                <p>(Nov 2015 - Jan 2016)</p>
+              </div>
+              <div class="marker"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-right milestone left">
+              <div>
+                <h3 class="font-weight-bold">HireNinja Inc.</h3>
                 <h3>Frontend Developer</h3>
                 <p>(Feb 2016 - Current)</p>
               </div>
@@ -111,32 +155,32 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skill">
       <div class="container">
-        <h1>MY SKILLS</h1>
+        <h1 class="section-head">MY SKILLS</h1>
         <div class="inner-content">
           <div class="row d-flex justify-content-between mb-3" gutters="10">
             <div class="col-md-4 text-right">
               <h4>Frontend Development</h4>
             </div>
             <div class="col-md-7 d-flex flex-row flex-wrap">
-              <p class="skill-card">HTML5</p>
-              <p class="skill-card">CSS / SCSS / LESS</p>
-              <p class="skill-card">Javascript</p>
-              <p class="skill-card">AngularJS</p>
-              <p class="skill-card">VueJS</p>
-              <p class="skill-card">ReactJS</p>
-              <p class="skill-card">JQuery</p>
-              <p class="skill-card">Ionic Framework</p>
-              <p class="skill-card">Typescript</p>
-              <p class="skill-card">MomentJS</p>
-              <p class="skill-card">UnderscoreJS / Lodash</p>
-              <p class="skill-card">Bootstrap</p>
-              <p class="skill-card">Semantic UI</p>
-              <p class="skill-card">Element UI</p>
-              <p class="skill-card">Material Design</p>
-              <p class="skill-card">Gulp</p>
-              <p class="skill-card">Webpack</p>
+              <p class="skill-card card">HTML5</p>
+              <p class="skill-card card">CSS / SCSS / LESS</p>
+              <p class="skill-card card">Javascript</p>
+              <p class="skill-card card">AngularJS</p>
+              <p class="skill-card card">VueJS</p>
+              <p class="skill-card card">ReactJS</p>
+              <p class="skill-card card">JQuery</p>
+              <p class="skill-card card">Ionic Framework</p>
+              <p class="skill-card card">Typescript</p>
+              <p class="skill-card card">MomentJS</p>
+              <p class="skill-card card">UnderscoreJS / Lodash</p>
+              <p class="skill-card card">Bootstrap</p>
+              <p class="skill-card card">Semantic UI</p>
+              <p class="skill-card card">Element UI</p>
+              <p class="skill-card card">Material Design</p>
+              <p class="skill-card card">Gulp</p>
+              <p class="skill-card card">Webpack</p>
             </div>
           </div>
           <div class="row d-flex justify-content-between mb-3" gutters="10">
@@ -144,12 +188,12 @@
               <h4>Backend & Databases</h4>
             </div>
             <div class="col-md-7 d-flex flex-row flex-wrap">
-              <p class="skill-card">Php</p>
-              <p class="skill-card">Laravel Framework</p>
-              <p class="skill-card">NodeJS</p>
-              <p class="skill-card">ExpressJS</p>
-              <p class="skill-card">MySQL</p>
-              <p class="skill-card">MongoDB</p>
+              <p class="skill-card card">Php</p>
+              <p class="skill-card card">Laravel Framework</p>
+              <p class="skill-card card">NodeJS</p>
+              <p class="skill-card card">ExpressJS</p>
+              <p class="skill-card card">MySQL</p>
+              <p class="skill-card card">MongoDB</p>
             </div>
           </div>
           <div class="row d-flex justify-content-between mb-3" gutters="10">
@@ -157,11 +201,11 @@
               <h4>Blockchain</h4>
             </div>
             <div class="col-md-7 d-flex flex-row flex-wrap">
-              <p class="skill-card">Solidity</p>
-              <p class="skill-card">Remix</p>
-              <p class="skill-card">Web3.js</p>
-              <p class="skill-card">Metamask</p>
-              <p class="skill-card">Etherscan API</p>
+              <p class="skill-card card">Solidity</p>
+              <p class="skill-card card">Remix</p>
+              <p class="skill-card card">Web3.js</p>
+              <p class="skill-card card">Metamask</p>
+              <p class="skill-card card">Etherscan API</p>
             </div>
           </div>
           <div class="row d-flex justify-content-between mb-3" gutters="10">
@@ -169,13 +213,14 @@
               <h4>SVN & Task Management</h4>
             </div>
             <div class="col-md-7 d-flex flex-row flex-wrap">
-              <p class="skill-card">Git</p>
-              <p class="skill-card">Github</p>
-              <p class="skill-card">Bitbucket</p>
-              <p class="skill-card">GitLab</p>
-              <p class="skill-card">Jira</p>
-              <p class="skill-card">Asana</p>
-              <p class="skill-card">Zenhub</p>
+              <p class="skill-card card">Git</p>
+              <p class="skill-card card">Github</p>
+              <p class="skill-card card">Bitbucket</p>
+              <p class="skill-card card">GitLab</p>
+              <p class="skill-card card">Jira</p>
+              <p class="skill-card card">Asana</p>
+              <p class="skill-card card">Zenhub</p>
+              <p class="skill-card card">Clubhouse</p>
             </div>
           </div>
           <div class="row d-flex justify-content-between mb-3" gutters="10">
@@ -183,66 +228,131 @@
               <h4>DevOps</h4>
             </div>
             <div class="col-md-7 d-flex flex-row flex-wrap">
-              <p class="skill-card">Auto/Manual Deployment</p>
-              <p class="skill-card">Heroku</p>
-              <p class="skill-card">DeployHQ</p>
-              <p class="skill-card">Docker</p>
+              <p class="skill-card card">Auto/Manual Deployment</p>
+              <p class="skill-card card">Heroku</p>
+              <p class="skill-card card">DeployHQ</p>
+              <p class="skill-card card">Docker</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="portfolio bg-primary">
-      <div>
-        <div class="container">
-          <h1>MY PORTFOLIO</h1>
-          <!-- <div class="inner-content d-flex flex-column justify-content-center">
-            <div class="portfolio-card row d-flex align-items-center justify-content-between">
-              <div class="col-md-5 text-center">
-                <div class="image">
-                  <img src="./images/portfolio.png">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="description">
-                  <h4>Portfolio Item 1</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
+    <section class="portfolio bg-primary" id="portfolio">
+      <div class="container">
+        <h1 class="section-head">MY PORTFOLIO</h1>
+        <div class="inner-content">
 
-            <div class="portfolio-card row d-flex align-items-center justify-content-between">
-              <div class="col-md-5 text-center">
-                <div class="image">
-                  <img src="./images/portfolio.png">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="description">
-                  <h4>Portfolio Item 1</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
+          <div class="row portfolio-item d-flex justify-content-between align-items-center">
+            <div class="col-md-5 text-right">
+              <img class="image" src="./images/portfolio.png">
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <h3>FreightTrust</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
+          </div>
 
-            <div class="portfolio-card row d-flex align-items-center justify-content-between">
-              <div class="col-md-5 text-center">
-                <div class="image">
-                  <img src="./images/portfolio.png">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="description">
-                  <h4>Portfolio Item 1</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
+          <div class="row portfolio-item d-flex justify-content-between align-items-center">
+            <div class="col-md-5 text-right">
+              <img class="image" src="./images/portfolio.png">
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <h3>Enterprise Wallet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
-          </div> -->
+          </div>
+
+          <div class="row portfolio-item d-flex justify-content-between align-items-center">
+            <div class="col-md-5 text-right">
+              <img class="image" src="./images/portfolio.png">
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <h3>CoinIngiter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row portfolio-item d-flex justify-content-between align-items-center">
+            <div class="col-md-5 text-right">
+              <img class="image" src="./images/portfolio.png">
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <h3>TopAlarmCompanies</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row portfolio-item d-flex justify-content-between align-items-center">
+            <div class="col-md-5 text-right">
+              <img class="image" src="./images/portfolio.png">
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <h3>TopMoving</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row portfolio-item d-flex justify-content-between align-items-center">
+            <div class="col-md-5 text-right">
+              <img class="image" src="./images/portfolio.png">
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <h3>CarShippingQuote</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row portfolio-item d-flex justify-content-between align-items-center">
+            <div class="col-md-5 text-right">
+              <img class="image" src="./images/portfolio.png">
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <h3>Tecademics</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row portfolio-item d-flex justify-content-between align-items-center">
+            <div class="col-md-5 text-right">
+              <img class="image" src="./images/portfolio.png">
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <h3>HireNinja</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row portfolio-item d-flex justify-content-between align-items-center">
+            <div class="col-md-5 text-right">
+              <img class="image" src="./images/portfolio.png">
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <h3>Anhance</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
+      <!-- <div>
         <div class="d-flex flex-column justify-content-center inner-content">
           <div class="d-flex flex-row flex-nowrap scroll-list">
             <div>
@@ -318,16 +428,16 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
-        <h1>CONTACT ME</h1>
+        <h1 class="section-head">CONTACT ME</h1>
         <div class=" d-flex flex-column justify-content-center inner-content">
           <div class="contact-card">
             <form>  
-              <h4 class="text-center mt-0 mb-5">Have A Project In Mind? Let's Discuss!</h4>
+              <h4 class="text-center mt-0 mb-4">Have A Project In Mind? Let's Discuss!</h4>
               <div class="form-group ">
                 <label>NAME</label>
                 <input type="text" placeholder="John Doe" class="form-control w-100">
@@ -347,5 +457,7 @@
         </div>
       </div>
     </section>
+
+    <script type="text/javascript" src="./scripts/script.js"></script>
   </body>
 </html>

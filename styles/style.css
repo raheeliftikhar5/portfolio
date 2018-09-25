@@ -8,11 +8,12 @@ html {
 }
 
 body {
-	font-family: 'Poppins';
+    font-family: 'Poppins';
+    font-size: inherit;
 }
 
 p {
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 }
 
 .bg-primary {
@@ -24,6 +25,12 @@ p {
 	width: 1400px;
     max-width: 95%;
     height: 100%;
+}
+
+.card {
+    padding: 0.75rem 1.5rem;
+    box-shadow: 2px 2px 8px 1px lightgrey;
+    color: #4049aa;
 }
 
 .progress-bar {
@@ -105,13 +112,12 @@ p {
 }
 
 .hero-banner .social a {
-	font-size: 1.25rem;
     color: white;
     margin: 0 1.75rem;
 }
 
 section {
-	height: 100vh;
+	min-height: 100vh;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -120,9 +126,27 @@ section {
 section h1 {
 	font-size: 3.5rem;
     text-align: center;
-    margin: 4rem 0;
+    padding: 4rem 0;
+    margin-bottom: 0;
     font-weight: bold;
     color: #3828AA;
+    background-color: white;
+}
+
+section.sticky {
+    padding-top: 195px;
+}
+
+section.sticky h1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+}
+
+section.bg-primary h1 {
+    background-color: #191059;
 }
 
 section h2 {
@@ -146,7 +170,28 @@ section.bg-primary h6 {
 }
 
 section .inner-content {
-	height: calc(100vh - 14.5rem);
+    min-height: calc(100vh - 14.5rem);
+    padding-bottom: 5rem;
+}
+
+section.about .card {
+    border-radius: 0;
+    margin: 25px 0;
+    box-shadow: 2px 2px 9px 0px lightgrey;
+    color: #4049aa;
+    border-color: transparent;
+    border-width: 12px;
+    border-left: 0.75rem solid #4049aa;
+}
+
+section.about .academics ul {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+section.about .academics ul h5 {
+    margin-bottom: 0;
+    font-weight: bold;
 }
 
 section.about .image img {
@@ -207,11 +252,8 @@ section.work .milestone.right:before {
 
 section.skills p.skill-card {
 	margin-right: 1rem;
-    padding: 0.75rem 1.5rem;
-    box-shadow: 2px 2px 8px 1px lightgrey;
-    border-radius: 5px;
+    border-radius: 0px;
     font-weight: bold;
-    color: #4049aa;
     font-size: 1rem;
 }
 
@@ -231,11 +273,28 @@ section.portfolio .scroll-list > *:last-child  .portfolio-card {
 	margin-right: 6rem;
 }
 
+section.portfolio .portfolio-item {
+    height: 100%;
+    min-height: calc(100vh - 14.5rem);
+}
+
+section.portfolio .portfolio-item img.image {
+    max-width: 450px;
+    width: 100%;
+}
+
+section.portfolio.sticky .portfolio-item img.image {
+    position: fixed;
+    top: 60%;
+    left: 5.25%;
+    transform: translateY(-50%);
+}
+
 section.portfolio .portfolio-card {
     width: 22rem;
     background: #262d71;
     padding: 4rem 2rem;
-    border-radius: 1rem;
+    border-radius: 0rem;
     margin: 0 1rem;
     box-shadow: 1px 1px 1px 1px #1d2359;
 }
@@ -290,3 +349,4 @@ section.contact .contact-card .btn-primary {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
