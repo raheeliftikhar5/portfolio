@@ -8,22 +8,20 @@
     <!-- <link rel="stylesheet" href="./styles/responsive.css"> -->
   </head>
   <body>
-    <div class="progress-bar"></div>
+    <div class="progress-bar" id="progressBar"></div>
     <main class="hero-banner jumbotron px-0 bg-primary">
       <div class="container d-flex flex-column justify-content-between">
         <div class="navbar-menu text-center">
-          <a href='#'>ABOUT</a>
-          <a href='#'>WORK</a>
-          <a href='#'>SKILLS</a>
-          <a href='#'>PORTFOLIO</a>
-          <a href='#'>CONTACT</a>
+          <a href='#' onclick="scrollToSection('about')">ABOUT</a>
+          <a href='#' onclick="scrollToSection('work')">WORK</a>
+          <a href='#' onclick="scrollToSection('skills')">SKILLS</a>
+          <a href='#' onclick="scrollToSection('portfolio')">PORTFOLIO</a>
+          <a href='#' onclick="scrollToSection('contact')">CONTACT</a>
         </div>
-        <div class="row d-flex align-items-center w-100">
+        <!-- <div class="row d-flex align-items-center w-100">
           <div class="col-md-6">
             <div class="name text-center">
-              <!-- <p class="first">MUHAMMAD</p> -->
               <h1 class="middle position-relative">RAHEEL</h1>
-              <!-- <p class="last">IFTIKHAR</p> -->
             </div>
           </div>
           <div class="col-md-6">
@@ -31,26 +29,30 @@
               <h1 class="text-center">Frontend Developer</h1>
             </div>
           </div>
+        </div> -->
+        <div class="row d-flex align-items-center flex-nowrap w-100">
+          <div class="col-md-6 image mr-5">
+            <img src="images/image.jpg"/>
+          </div>
+          <div class="col-md-6 title ml-5">
+            <h1 class="text-left">RAHEEL IFTIKHAR</h1>
+            <h2 class="text-left">Frontend Developer</h2>
+          </div>
         </div>
         <div class="social text-center">
           <a href="#">
-            <!-- <i class="fas fa-envelope"></i> -->
             EMAIL
           </a>
           <a href="#">
-            <!-- <i class="fas fa-phone"></i> -->
             PHONE
           </a>
           <a href="#">
-            <!-- <i class="fab fa-skype"></i> -->
             SKYPE
           </a>
           <a href="#">
-            <!-- <i class="fab fa-linkedin-in"></i> -->
             LINKEDIN
           </a>
           <a href="#">
-            <!-- <i class="fab fa-github-alt"></i> -->
             GITHUB
           </a>
         </div>
@@ -63,28 +65,25 @@
         <div class="d-flex align-items-center justify-content-center inner-content">
           <div class="row d-flex justify-content-center">
             <div class="col-sm-12 col-md-10 col-lg-8">
-              <div class="card">
-                <h4>Career Objective</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-
-              <div class="card academics">
-                <h4>Academics</h4>
+              <div class="about-item">
+                <p>Hello! I am Muhammad Raheel Iftikhar and I am frontend developer with 3+ years of experience developing web applications using latest frameworks and libraries. My experience includes: </p>
                 <ul>
-                  <li>
-                    <h5>Bachelors of Science in Computer Science - BS(CS)</h5>
-                    <p>National University of Computer & Emerging Sciences, Islamabad  (2011 - 2015)</p>
-                  </li>
-                  <li>
-                    <h5>Higher Secondary School Certificate - HSSC</h5>
-                    <p>F.G. Liaqat Ali Degree College, Rawalpindi  (2009 - 2011)</p>
-                  </li>
+                  <li>Web applicaiton architecture</li>
+                  <li>UI/UX development</li>
+                  <li>Responsive & Cross browser support</li>
+                  <li>Connecting with REST API</li>
+                  <li>Web Analytics</li>
+                  <li>Performance optimization</li>
                 </ul>
               </div>
-
-              <div class="card">
-                <h4>Career Objective</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="about-item">
+                <h4>EDUCATION</h4>
+                <ul>
+                  <li>
+                    <div>Bachelors of Science in Computer Science - BS(CS)</div>
+                    <div>National University of Computer & Emerging Sciences, Islamabad  (2011 - 2015)</div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -196,7 +195,7 @@
               <p class="skill-card card">MongoDB</p>
             </div>
           </div>
-          <div class="row d-flex justify-content-between mb-3" gutters="10">
+          <!-- <div class="row d-flex justify-content-between mb-3" gutters="10">
             <div class="col-md-4 text-right">
               <h4>Blockchain</h4>
             </div>
@@ -207,7 +206,7 @@
               <p class="skill-card card">Metamask</p>
               <p class="skill-card card">Etherscan API</p>
             </div>
-          </div>
+          </div> -->
           <div class="row d-flex justify-content-between mb-3" gutters="10">
             <div class="col-md-4 text-right">
               <h4>SVN & Task Management</h4>
@@ -243,8 +242,8 @@
         <h1 class="section-head">MY PORTFOLIO</h1>
         <div class="inner-content">
 
-          <div class="row portfolio-item d-flex justify-content-between align-items-center">
-            <div class="col-md-5 text-right">
+          <div class="row portfolio-item d-flex justify-content-center align-items-center">
+            <div class="col-md-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
             <div class="col-md-6">
@@ -255,20 +254,20 @@
             </div>
           </div>
 
-          <div class="row portfolio-item d-flex justify-content-between align-items-center">
-            <div class="col-md-5 text-right">
-              <img class="image" src="./images/portfolio.png">
-            </div>
+          <div class="row portfolio-item d-flex justify-content-center align-items-center">
             <div class="col-md-6">
               <div class="content">
                 <h3>Enterprise Wallet</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
+            <div class="col-md-6 text-center">
+              <img class="image" src="./images/portfolio.png">
+            </div>
           </div>
 
-          <div class="row portfolio-item d-flex justify-content-between align-items-center">
-            <div class="col-md-5 text-right">
+          <div class="row portfolio-item d-flex justify-content-center align-items-center">
+            <div class="col-md-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
             <div class="col-md-6">
@@ -279,20 +278,20 @@
             </div>
           </div>
 
-          <div class="row portfolio-item d-flex justify-content-between align-items-center">
-            <div class="col-md-5 text-right">
-              <img class="image" src="./images/portfolio.png">
-            </div>
+          <div class="row portfolio-item d-flex justify-content-center align-items-center">
             <div class="col-md-6">
               <div class="content">
                 <h3>TopAlarmCompanies</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
+            <div class="col-md-6 text-center">
+              <img class="image" src="./images/portfolio.png">
+            </div>
           </div>
 
-          <div class="row portfolio-item d-flex justify-content-between align-items-center">
-            <div class="col-md-5 text-right">
+          <div class="row portfolio-item d-flex justify-content-center align-items-center">
+            <div class="col-md-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
             <div class="col-md-6">
@@ -303,20 +302,20 @@
             </div>
           </div>
 
-          <div class="row portfolio-item d-flex justify-content-between align-items-center">
-            <div class="col-md-5 text-right">
-              <img class="image" src="./images/portfolio.png">
-            </div>
+          <div class="row portfolio-item d-flex justify-content-center align-items-center">
             <div class="col-md-6">
               <div class="content">
                 <h3>CarShippingQuote</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
+            <div class="col-md-6 text-center">
+              <img class="image" src="./images/portfolio.png">
+            </div>
           </div>
 
-          <div class="row portfolio-item d-flex justify-content-between align-items-center">
-            <div class="col-md-5 text-right">
+          <div class="row portfolio-item d-flex justify-content-center align-items-center">
+            <div class="col-md-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
             <div class="col-md-6">
@@ -327,20 +326,20 @@
             </div>
           </div>
 
-          <div class="row portfolio-item d-flex justify-content-between align-items-center">
-            <div class="col-md-5 text-right">
-              <img class="image" src="./images/portfolio.png">
-            </div>
+          <div class="row portfolio-item d-flex justify-content-center align-items-center">
             <div class="col-md-6">
               <div class="content">
                 <h3>HireNinja</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
+            <div class="col-md-6 text-center">
+              <img class="image" src="./images/portfolio.png">
+            </div>
           </div>
 
-          <div class="row portfolio-item d-flex justify-content-between align-items-center">
-            <div class="col-md-5 text-right">
+          <div class="row portfolio-item d-flex justify-content-center align-items-center">
+            <div class="col-md-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
             <div class="col-md-6">
@@ -352,83 +351,6 @@
           </div>
         </div>
       </div>
-      <!-- <div>
-        <div class="d-flex flex-column justify-content-center inner-content">
-          <div class="d-flex flex-row flex-nowrap scroll-list">
-            <div>
-              <div class="portfolio-card text-center">
-                <div class="image">
-                  <img src="./images/FreightTrust.png">
-                </div>
-                <div class="content">
-                  <h5>FreightTrust Admin</h5>
-                  <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div class="portfolio-card text-center">
-                <div class="image">
-                  <img src="./images/FreightTrust.png">
-                </div>
-                <div class="content">
-                  <h5>FreightTrust Admin</h5>
-                  <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div class="portfolio-card text-center">
-                <div class="image">
-                  <img src="./images/FreightTrust.png">
-                </div>
-                <div class="content">
-                  <h5>FreightTrust Admin</h5>
-                  <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-                </div>
-              </div>
-            </div>
-            
-            <div>            
-              <div class="portfolio-card text-center">
-                <div class="image">
-                  <img src="./images/FreightTrust.png">
-                </div>
-                <div class="content">
-                  <h5>FreightTrust Admin</h5>
-                  <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <div class="portfolio-card text-center">
-                <div class="image">
-                  <img src="./images/FreightTrust.png">
-                </div>
-                <div class="content">
-                  <h5>FreightTrust Admin</h5>
-                  <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <div class="portfolio-card text-center">
-                <div class="image">
-                  <img src="./images/FreightTrust.png">
-                </div>
-                <div class="content">
-                  <h5>FreightTrust Admin</h5>
-                  <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </section>
 
     <section class="contact" id="contact">

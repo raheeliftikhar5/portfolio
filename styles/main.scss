@@ -1,14 +1,14 @@
-@font-face {
-	font-family: 'Poppins';
-	src: url('./fonts/Poppins-Regular.ttf');
-}
+// @font-face {
+// 	font-family: 'Poppins';
+// 	src: url('./fonts/Poppins-Regular.ttf');
+// }
 
 html {
 	font-size: 16px;
 }
 
 body {
-    font-family: 'Poppins';
+    // font-family: 'Poppins';
     font-size: inherit;
 }
 
@@ -17,7 +17,7 @@ p {
 }
 
 .bg-primary {
-	background-color: #080738 !important;
+	background-color: #191059 !important;
 	color: white;
 }
 
@@ -30,7 +30,7 @@ p {
 .card {
     padding: 0.75rem 1.5rem;
     box-shadow: 2px 2px 8px 1px lightgrey;
-    color: #161479;
+    color: #4049aa;
 }
 
 .progress-bar {
@@ -108,21 +108,6 @@ p {
 	text-align: center;
 }
 
-.hero-banner .image {
-    text-align: right;
-}
-.hero-banner .image img {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    border: 5px solid white;
-}
-
-.hero-banner .title h1 {
-    margin-bottom: 10px;
-    font-size: 3.5rem;
-}
-
 .hero-banner .social {
 	margin: 2rem 0;
 }
@@ -145,7 +130,7 @@ section h1 {
     padding: 4rem 0;
     margin-bottom: 0;
     font-weight: bold;
-    color: #161479;
+    color: #3828AA;
     background-color: white;
 }
 
@@ -162,7 +147,7 @@ section.sticky h1 {
 }
 
 section.bg-primary h1 {
-    background-color: #080738;
+    background-color: #191059;
 }
 
 section h2 {
@@ -170,9 +155,9 @@ section h2 {
 }
 
 section h4 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin: 1rem 0;
-    color: #161479;
+    color: #4049aa;
     font-weight: bold;
 }
 
@@ -190,30 +175,32 @@ section .inner-content {
     padding-bottom: 5rem;
 }
 
-section.about ul {
-    list-style-type: square;
+section.about .card {
+    border-radius: 0;
+    margin: 25px 0;
+    box-shadow: 2px 2px 9px 0px lightgrey;
+    color: #4049aa;
+    border-color: transparent;
+    border-width: 12px;
+    border-left: 0.75rem solid #4049aa;
 }
 
-section.about h4 {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 2rem;
-    font-size: 1.25rem;
+section.about .academics ul {
+    margin-bottom: 0;
+    padding-left: 20px;
 }
 
-section.about h4:after {
-    content: "";
-    width: 100%;
-    height: 3px;
-    background: #161479;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+section.about .academics ul h5 {
+    margin-bottom: 0;
+    font-weight: bold;
 }
 
-section.about .about-item {
-    margin-bottom: 60px;
-    color: #161479;
+section.about .image img {
+    max-width: 20rem;
+    box-sizing: content-box;
+    background: black;
+    border-radius: 2rem;
+    box-shadow: 6px 6px 10px 1px grey;
 }
 
 section.work .milestone {
@@ -341,7 +328,7 @@ section.contact .contact-card label {
     font-size: 0.9rem;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #161479;
+    color: #4049aa;
 }
 
 section.contact .contact-card .form-control {
@@ -349,7 +336,7 @@ section.contact .contact-card .form-control {
     letter-spacing: 1px;
     border-radius: 0;
     padding: 0.5rem .75rem;
-    border: 2px solid #161479;
+    border: 2px solid #4049aa;
 }
 
 section.contact .contact-card .form-control:focus {
@@ -361,8 +348,8 @@ section.contact .contact-card .form-control::placeholder {
 }
 
 section.contact .contact-card .btn-primary {
-    background-color: #161479;
-    border-color: #161479;
+    background-color: #4049aa;
+    border-color: #4049aa;
     border-radius: 0;
     padding: 0.75rem;
     font-weight: bold;
