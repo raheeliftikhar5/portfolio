@@ -9,7 +9,7 @@ html {
 
 body {
     font-family: 'Poppins';
-    font-size: inherit;
+    font-size: 1.1rem;
 }
 
 p {
@@ -23,7 +23,7 @@ p {
 
 .container {
 	width: 1400px;
-    max-width: 95%;
+    max-width: 90%;
     height: 100%;
 }
 
@@ -73,7 +73,7 @@ section.bg-primary .card {
 	margin: 2rem 0;
 }
 .hero-banner .navbar-menu a {
-	margin: 0 3rem;
+	margin: 0 2.5rem;
 	color: white;
 	font-weight: bold;
 }
@@ -82,6 +82,13 @@ section.bg-primary .card {
 	text-decoration: none;
 }
 
+.hero-banner .content-wrapper {
+    /* padding: 6rem 0; */
+}
+
+.hero-banner .title {
+    text-align: left;
+}
 .hero-banner .name .middle {
 	font-size: 10rem;
 	line-height: normal;
@@ -108,7 +115,7 @@ section.bg-primary .card {
     border-left: 3px solid white;
 }
 .hero-banner .download-resume {
-    padding: 0.4rem 1.75rem;
+    padding: 10px 45px;
     margin-top: 0.8rem;
     cursor: pointer;
     font-weight: bold;
@@ -133,8 +140,10 @@ section.bg-primary .card {
     text-align: right;
 }
 .hero-banner .image img {
-    width: 450px;
-    height: 450px;
+    max-width: 100%;
+    width: 28rem;
+    /* width: 450px; */
+    /* height: 450px; */
     border-radius: 50%;
     border: 5px solid white;
 }
@@ -142,6 +151,16 @@ section.bg-primary .card {
 .hero-banner .title h1 {
     margin-bottom: 10px;
     font-size: 3.5rem;
+}
+
+.hero-banner .social-icons {
+    margin-top: 18px;
+}
+
+.hero-banner .social-icons a {
+    color:#ced4da;
+    padding: 0 10px;
+    font-size: 16px;
 }
 
 .hero-banner .social {
@@ -213,6 +232,7 @@ section .inner-content {
 
 section.about ul {
     list-style-type: square;
+    font-size: 1.1rem;
 }
 
 section.about h4 {
@@ -237,6 +257,10 @@ section.about .about-item {
     color: #161479;
 }
 
+section.about .about-item:last-child {
+    margin-bottom: 0;
+}
+
 section.work .milestone {
 	height: 12rem;
 	position: relative;
@@ -246,11 +270,13 @@ section.work .milestone {
 }
 
 section.work .milestone.left {
-	padding-right: 6rem;
+    padding-right: 4rem;
+    padding-left: 3rem;
 }
 
 section.work .milestone.right {
-	padding-left: 6rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
 }
 
 section.work .milestone .marker {
@@ -288,7 +314,15 @@ section.work .milestone.right:before {
 section.skills p.skill-card {
     border-radius: 0px;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+
+section.skills .skill-heading {
+    text-align: left;
+}
+
+section.skills .skill-heading h4 {
+    font-size: 1.5rem;
 }
 
 section.portfolio .scroll-list {
@@ -311,7 +345,8 @@ section.portfolio .portfolio-item {
     position: relative;
     height: 100%;
     /* min-height: calc(100vh - 14.5rem); */
-    margin: 5rem 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 section.portfolio .portfolio-item img.image {
@@ -349,7 +384,7 @@ section.portfolio .portfolio-card .image img {
 }
 
 section.contact .contact-card {
-    max-width: 90%;
+    max-width: 100%;
     width: 35rem;
     margin: 0 auto;
 }

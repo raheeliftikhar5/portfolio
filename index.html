@@ -2,17 +2,18 @@
 <html>
 	<head>
     <title>RAHEEL IFTIKHAR</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
-    <!-- <link rel="stylesheet" href="./styles/responsive.css"> -->
+    <link rel="stylesheet" href="./styles/responsive.css">
   </head>
   <body>
     <div class="progress-bar" id="progressBar"></div>
 
     <main class="hero-banner jumbotron px-0 bg-primary">
       <div class="container d-flex flex-column justify-content-between">
-        <div class="navbar-menu text-center">
+        <div class="navbar-menu text-center d-lg-block d-none">
           <a href='#' onclick="scrollToSection('about')">ABOUT</a>
           <a href='#' onclick="scrollToSection('work')">WORK</a>
           <a href='#' onclick="scrollToSection('skills')">SKILLS</a>
@@ -31,17 +32,34 @@
             </div>
           </div>
         </div> -->
-        <div class="row d-flex align-items-center flex-nowrap w-100">
-          <div class="col-md-6 image pr-5">
+        <div class="row d-flex align-items-center flex-wrap content-wrapper">
+          <div class="col-md-12 col-lg-6 image ">
             <img src="images/image.jpg"/>
           </div>
-          <div class="col-md-6 title pl-5">
-            <h1 class="text-left">RAHEEL IFTIKHAR</h1>
-            <h2 class="text-left">Frontend Developer</h2>
+          <div class="col-md-12 col-lg-6 title pl-5">
+            <h1>RAHEEL IFTIKHAR</h1>
+            <h2>Frontend Developer</h2>
             <button class="download-resume">Download Resume</button>
+            <div class="social-icons d-lg-none d-block">
+              <a href="mailto:iraheel021@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="tel:+923125057587">
+                <i class="fas fa-phone"></i>
+              </a>
+              <a href="skype:raheel.iftikhar5">
+                <i class="fab fa-skype"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/iraheel021" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/raheeliftikhar5" target="_blank">
+                <i class="fab fa-github-square"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="social text-center">
+        <div class="social text-center d-lg-block d-none">
           <a href="mailto:iraheel021@gmail.com">
             EMAIL
           </a>
@@ -114,10 +132,10 @@
               </div>
               <div class="marker"></div>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6 useless-column"></div>
           </div>
           <div class="row">
-            <div class="col-md-6"></div>
+            <div class="col-md-6 useless-column"></div>
             <div class="col-md-6 text-left milestone right">
               <div>
                 <h3 class="font-weight-bold">Upwork</h3>
@@ -136,7 +154,7 @@
               </div>
               <div class="marker"></div>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6 useless-column"></div>
           </div>
         </div>
       </div>
@@ -146,11 +164,11 @@
       <div class="container">
         <h1 class="section-head">MY SKILLS</h1>
         <div class="inner-content">
-          <div class="row d-flex justify-content-between mb-3" gutters="10">
-            <div class="col-md-4 text-right">
+          <div class="row d-flex justify-content-center mb-3">
+            <div class="col-md-12 col-lg-5 skill-heading">
               <h4>Frontend Development</h4>
             </div>
-            <div class="col-md-7 d-flex flex-row flex-wrap">
+            <div class="col-md-12 col-lg-6 d-flex flex-row flex-wrap">
               <p class="skill-card card">HTML5</p>
               <p class="skill-card card">CSS / SCSS / LESS</p>
               <p class="skill-card card">Javascript</p>
@@ -171,11 +189,11 @@
               <p class="skill-card card">Web3.js</p>              
             </div>
           </div>
-          <div class="row d-flex justify-content-between mb-3" gutters="10">
-            <div class="col-md-4 text-right">
+          <div class="row d-flex justify-content-center mb-3">
+            <div class="col-md-12 col-lg-5 skill-heading">
               <h4>Backend & Databases</h4>
             </div>
-            <div class="col-md-7 d-flex flex-row flex-wrap">
+            <div class="col-md-12 col-lg-6 d-flex flex-row flex-wrap">
               <p class="skill-card card">Php</p>
               <p class="skill-card card">Laravel Framework</p>
               <p class="skill-card card">NodeJS</p>
@@ -185,7 +203,7 @@
             </div>
           </div>
           <!-- <div class="row d-flex justify-content-between mb-3" gutters="10">
-            <div class="col-md-4 text-right">
+            <div class="col-md-4 skill-heading">
               <h4>Blockchain</h4>
             </div>
             <div class="col-md-7 d-flex flex-row flex-wrap">
@@ -196,11 +214,11 @@
               <p class="skill-card card">Etherscan API</p>
             </div>
           </div> -->
-          <div class="row d-flex justify-content-between mb-3" gutters="10">
-            <div class="col-md-4 text-right">
+          <div class="row d-flex justify-content-center mb-3">
+            <div class="col-md-12 col-lg-5 skill-heading">
               <h4>SVN & Task Management</h4>
             </div>
-            <div class="col-md-7 d-flex flex-row flex-wrap">
+            <div class="col-md-12 col-lg-6 d-flex flex-row flex-wrap">
               <p class="skill-card card">Git</p>
               <p class="skill-card card">Github</p>
               <p class="skill-card card">Bitbucket</p>
@@ -211,11 +229,11 @@
               <p class="skill-card card">Clubhouse</p>
             </div>
           </div>
-          <div class="row d-flex justify-content-between mb-3" gutters="10">
-            <div class="col-md-4 text-right">
+          <div class="row d-flex justify-content-center mb-3">
+            <div class="col-md-12 col-lg-5 skill-heading">
               <h4>DevOps</h4>
             </div>
-            <div class="col-md-7 d-flex flex-row flex-wrap">
+            <div class="col-md-12 col-lg-6 d-flex flex-row flex-wrap">
               <p class="skill-card card">Auto/Manual Deployment</p>
               <p class="skill-card card">Heroku</p>
               <p class="skill-card card">DeployHQ</p>
@@ -248,11 +266,11 @@
             </div>
           </div> -->
           <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
               <!-- <img class="image" src="./images/portfolio.png"> -->
               <h2 class="text-left">FreightTrust</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <!-- <h3>FreightTrust</h3> -->
                 <p>FreightTrust is marketplace for freight companies which uses Ethereum smart contracts to store shipping documents on blockchain e.g. Bills of lading.</p>
@@ -270,10 +288,10 @@
           </div>
 
           <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
               <h2 class="text-left">Enterprise Wallet</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <p class="mb-4">An Ethereum based desktop wallet solely developed by me for company’s client that allows user to check ethereum network stats as well as current account stats, send/receive ethers, check transactions, maintain address book and save DApps as bookmarks.</p>
                 <div class="d-flex flex-row flex-wrap">
@@ -288,22 +306,22 @@
           </div>
 
           <!-- <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <h3>Enterprise Wallet</h3>
                 <p>Enterprise wallet is an electron based Ethereum wallet which shows </p>
               </div>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-12 col-lg-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
           </div> -->
 
           <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
               <h2 class="text-left">CoinIgniter</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <p class="mb-4">A company’s product that allow user to create own ICO / Sweepstake based on ethereum network. I worked mainly on admin dashboard, public sites for ICO/Sweepstake and micro-site.</p>
                 <div class="d-flex flex-row flex-wrap">
@@ -318,10 +336,10 @@
             </div>
           </div>
           <!-- <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-6 text-center">
+            <div class="col-md-12 col-lg-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <h3>CoinIngiter</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -330,10 +348,10 @@
           </div> -->
 
           <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
               <h2 class="text-left">Top Alarm Companies</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <p class="mb-4">Marketing site developed for IRELO that provide top 4 security alarm companies with a comparison tool for user to filter based on requirements.</p>
                 <div class="d-flex flex-row flex-wrap">
@@ -348,22 +366,22 @@
           </div>
 
           <!-- <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <h3>TopAlarmCompanies</h3>
                 <p>TopAlarmCompanies is a website to find the best home security systems with detailed features including pros and cons. Moreover, it also provides service to compare and find security system based on needs.</p>
               </div>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-12 col-lg-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
           </div> -->
 
           <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
               <h2 class="text-left">Top Moving</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <p class="mb-4">Web and mobile app developed for IRELO that generate leads for shipment providers and also provide the best shipping quotes to user based on home/apartment/office movement and pickup/delivery locations.</p>
                 <div class="d-flex flex-row flex-wrap">
@@ -378,10 +396,10 @@
           </div>
 
           <!-- <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-6 text-center">
+            <div class="col-md-12 col-lg-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <h3>TopMoving</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -390,10 +408,10 @@
           </div> -->
 
           <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
               <h2 class="text-left">Car Shipping Quote</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <p class="mb-4">Mobile app developed for IRELO that generate leads for car shipmen providers and provide the best car shipment quotes to user based on pickup / delivery locations.</p>
                 <div class="d-flex flex-row flex-wrap">
@@ -409,22 +427,22 @@
           </div>
 
           <!-- <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <h3>CarShippingQuote</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-12 col-lg-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
           </div> -->
 
           <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
               <h2 class="text-left">Tecademics</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <p class="mb-4">Tecademics is a US based client that provides digital marketing and training services. I have worked on their digital content and members management platform. In this project i learned how to work with distributed teams and collaborate on same application.</p>
                 <div class="d-flex flex-row flex-wrap">
@@ -437,10 +455,10 @@
           </div>
 
           <!-- <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-6 text-center">
+            <div class="col-md-12 col-lg-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <h3>Tecademics</h3>
                 <p>Tecademics is a platform that provides training about marketing as well as a platform for digital content marketing.</p>
@@ -449,10 +467,10 @@
           </div> -->
 
           <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
               <h2 class="text-left">HireNinja</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <p class="mb-4">Tecademics is a US based client that provides digital marketing and training services. I have worked on their digital content and members management platform. In this project i learned how to work with distributed teams and collaborate on same application.</p>
                 <div class="d-flex flex-row flex-wrap">
@@ -466,22 +484,22 @@
           </div>
 
           <!-- <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <h3>HireNinja</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-12 col-lg-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
           </div> -->
 
           <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
               <h2 class="text-left">Anhance</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <p class="mb-4">Anhance is a digital content management platform with features like affiliate marketing, members management and custom domains. As my first professional experience and working as frontend developer, I learned how to design the architecture of web apps and how to divide app into reusable small components.</p>
                 <div class="d-flex flex-row flex-wrap">
@@ -495,10 +513,10 @@
           </div>
 
           <!-- <div class="row portfolio-item d-flex justify-content-center align-items-center">
-            <div class="col-md-6 text-center">
+            <div class="col-md-12 col-lg-6 text-center">
               <img class="image" src="./images/portfolio.png">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="content">
                 <h3>Anhance</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
