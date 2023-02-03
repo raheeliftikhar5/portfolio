@@ -45,24 +45,24 @@
         
         setProgressBar(scrollTop, scrollHeight - contactHeight)
 
-        if (scrollTop >= contactPos && scrollBottom <= (contactPos + contactHeight)) {
-            makeSectionSticky('contact')
-        }
-        else if (scrollTop >= portfolioPos && scrollBottom <= (contactPos + 50)) {
-            makeSectionSticky('portfolio')
-        }
-        else if (scrollTop >= skillPos && scrollBottom <= portfolioPos) {
-            makeSectionSticky('skill')
-        }
-        else if (scrollTop >= workPos && scrollBottom <= skillPos) {
-            makeSectionSticky('work')
-        }
-        else if (scrollTop >= aboutPos && scrollBottom <= workPos) {
-            makeSectionSticky('about')
-        }
-        else {
-            makeSectionSticky('')
-        } 
+        // if (scrollTop >= contactPos && scrollBottom <= (contactPos + contactHeight)) {
+        //     makeSectionSticky('contact')
+        // }
+        // else if (scrollTop >= portfolioPos && scrollBottom <= (contactPos + 50)) {
+        //     makeSectionSticky('portfolio')
+        // }
+        // else if (scrollTop >= skillPos && scrollBottom <= portfolioPos) {
+        //     makeSectionSticky('skill')
+        // }
+        // else if (scrollTop >= workPos && scrollBottom <= skillPos) {
+        //     makeSectionSticky('work')
+        // }
+        // else if (scrollTop >= aboutPos && scrollBottom <= workPos) {
+        //     makeSectionSticky('about')
+        // }
+        // else {
+        //     makeSectionSticky('')
+        // } 
     }
 
     function setProgressBar(height, totalHeight) {
