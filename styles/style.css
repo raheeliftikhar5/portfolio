@@ -123,6 +123,7 @@ section.bg-primary .card {
     color: white;
     background: #d93d32;
     border: 1px solid white;
+    display: inline-block;
 }
 
 .hero-banner .header {
